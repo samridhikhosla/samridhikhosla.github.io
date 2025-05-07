@@ -15,7 +15,7 @@
                 <ul>
                   <li><a href="#">Home</a></li>
                   <li><a href="#">About</a></li>
-                  <li><a href="#">Learning</a></li>
+                  <li><a href="#">Learnings</a></li>
                   <li><a href="#">Contact</a></li>
                 </ul>
               </nav>
@@ -32,10 +32,112 @@
         </div>
     </div>
 
+<!-- about section -->
     <div id="about">
         <div class="container">
+            <div class="row">
+
+                <div class="about-col-1">
+                    <img src="images/me.png" width="445" height="655">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub">About Me</h1>
+                    <p class="sub-paragraph">I'm Samridhi Khosla, a third-year Computer Science student at the University of Alberta. 
+                       I enjoy bringing ideas to life, whether through apps, websites, or experimental 
+                       projects and I'm always eager to learn more. I'm currently seeking an internship where I can 
+                       apply my skills, grow through real-world experience, and contribute to building meaningful technology. 
+                       This website is a glimpse into my journey so far. Thanks for stopping by!
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab active" onclick="opentab('skills')">Skills</p>
+                        <p class="tab" onclick="opentab('experience')">Experience</p>
+                        <p class="tab" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-content active" id="skills">
+                        <ul>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>C</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>SQL</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span><strong>Teaching Assistant - CMPUT 175</strong></span><br>
+                                <em>January 2025 - Present</em><br>
+                                <ul>
+                                    <li>CMPUT 175 - Introduction to the Foundations of Computation II</li>
+                                    <li>Assisted 20+ students within a lab setting with programming tasks, debugging, and reinforcing course concepts.</li>
+                                    <li>Guided students on key computing concepts, including object-oriented programming, functional programming, and Abstract Data Types.</li>
+                                    <li>Held open office hours, assisting any of the 600+ enrolled students with coding issues and algorithm concepts.</li>
+                                    <li>Graded lab assignments and provided feedback to help students improve code efficiency and readability.</li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li>
+                                <span><strong>University of Alberta, Canada</strong></span><br>
+                                Bachelor of Science with Specialization in Computing Science<br>
+                                <em>September 2023 - April 2027 (expected)</em><br>
+                                GPA: 3.6 / 4.0
+                            </li>
+                            <li>
+                                <span><strong>Amity International School, India</strong></span><br>
+                                Science stream (Physics, Chemistry, Mathematics)<br>
+                                <em>April 2009 - April 2023</em><br>
+                                <ul>
+                                    <li>12th Grade: 92.8%</li>
+                                    <li>10th Grade: 96.4%</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- <div class="resume">
+                        <p>Here is my resume :- [currently in progess]</p>
+                    </div> -->
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+<!-- learnings section -->
+    <div id="learnings">
+        <div class="container">
+            
 
         </div>
     </div>
+
+<script>
+    var tabs = document.getElementsByClassName("tab")
+    var tabcontents = document.getElementsByClassName("tab-content")
+
+    function opentab(tabname){
+
+        for(tab of tabs){
+            tab.classList.remove("active");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active");
+        }
+
+        document.getElementById(tabname).classList.add("active");
+        event.currentTarget.classList.add("active");
+    }
+</script>
 </body>
 </html>

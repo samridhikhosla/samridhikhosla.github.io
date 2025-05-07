@@ -9,12 +9,14 @@ body{
     color: #4d3e38;
 }
 
+/* home section */
+
 #header{
     width: 100%;
     height: 100vh;
 }
 
-.container {
+.container{
     padding: 10px 5%;
 }
 
@@ -25,7 +27,7 @@ nav{
     flex-wrap: wrap;
 }
 
-.something {
+.something{
     font-size: 30px;
     font-style: italic;
     border-bottom:solid;
@@ -101,8 +103,97 @@ nav ul li a:hover::after{
     text-align: center;
     color: #252324; 
 }
+/* about section */
 
 #about{
     background: #252324; 
     min-height: 100vh;
+    padding: 80px 0;
+    color: #ebd7bd;
 }
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 40%;
+}
+
+.about-col-1 img{
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.tab-container{
+    position: relative;
+    min-height: 500px; 
+}
+
+.sub{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.sub-paragraph{
+    max-width: 750px;
+    line-height: 2;
+    margin-top: 20px;
+    
+}
+
+.tab-titles{
+    display:flex;
+    margin: 20px 0 40px;
+    gap: 20px;
+}
+
+.tab{
+    cursor: pointer;
+    padding: 14px 28px;        
+    border-radius: 16px;        
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 1000;
+}
+
+.tab.active{
+    background-color: #4d3e38; 
+}
+
+.tab-content ul li{
+    margin: 10px 20px;
+}
+
+.tab-content ul li span{
+   color:#c5beb5;
+   font-size: 20px;
+}
+
+.tab-content{
+    display: none;
+}
+
+.tab-content.active{
+    display: block;
+}
+
+/* .resume{
+    margin-top: 50px;
+    font-size: 20px;
+} */
+
+/* learning section */
+
+#learnings{
+    padding: 80px 0;
+    background: #4d3e38;
+    min-height: 100vh;
+    color: #ebd7bd;
+}
+
