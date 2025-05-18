@@ -220,21 +220,21 @@ nav ul li a:hover::after{
     margin-bottom: 30px;
 }
 
-.container ul{
+.con_container ul{
     list-style: none;
     padding: 0;
 }
 
-.container ul li{
+.con_container ul li{
     margin: 15px 0;
     font-size: 18px;
 }
 
-.container ul li a{
+.con_container ul li a{
     color: #252324;
     text-decoration: none;
 }
 
-.container ul li a:hover{
+.con_container ul li a:hover{
     text-decoration: underline;
 }
