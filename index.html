@@ -1,131 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <title>Personal Potfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>AOS.init();</script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
-<section id="spotify-home">
-  <div class="spotify-container">
-    <h1 class="main-title" data-aos="fade-up">Samridhi Khosla</h1>
-<p class="subtitle" data-aos="fade-up" data-aos-delay="200">Building, learning, and vibing through code 🎧</p>
-<div class="button-row" data-aos="zoom-in" data-aos-delay="400">
-
-    <div class="button-row">
-      <a href="#about" class="btn">About Me</a>
-      <a href="#learnings" class="btn">Learnings</a>
-      <a href="#contact" class="btn">Contact</a>
-    </div>
-  </div>
-</section>
-
-<section class="disassemble-section">
-  <h2 class="disassemble-text">
-    <span>B</span><span>u</span><span>i</span><span>l</span><span>d</span><span>i</span><span>n</span><span>g</span><span>,</span>
-    <span>&nbsp;</span>
-    <span>l</span><span>e</span><span>a</span><span>r</span><span>n</span><span>i</span><span>n</span><span>g</span><span>,</span>
-    <span>&nbsp;</span>
-    <span>a</span><span>n</span><span>d</span><span>&nbsp;</span>
-    <span>v</span><span>i</span><span>b</span><span>i</span><span>n</span><span>g</span>
-    <span>&nbsp;</span><span>t</span><span>h</span><span>r</span><span>o</span><span>u</span><span>g</span><span>h</span>
-    <span>&nbsp;</span><span>c</span><span>o</span><span>d</span><span>e</span><span>🎧</span>
-  </h2>
-</section>
-
-<section class="yo-section">
-
-
-
-</section>
-<!-- Projects Section -->
-<section id="projects">
-  <div class="container">
-    <h2 class="section-title" data-aos="fade-up">My Projects</h2>
-    <div class="playlist-grid">
-
-      <!-- Project Card 1 -->
-      <div class="playlist-card" onclick="openModal('modal1')" data-aos="fade-up" data-aos-delay="100">
-        <div class="card-img-container">
-          <img src="images/mood.png" alt="Mood Tracker">
-          <div class="play-button"><i class="fa fa-play"></i></div>
-        </div>
-        <h3>Mood Tracker</h3>
-        <p>Genre: Wellness Tech</p>
-      </div>
-
-      <!-- Add more cards similarly -->
-
-    </div>
-  </div>
-</section>
-
-<!-- Modal Structure -->
-<div id="modal1" class="project-modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('modal1')">&times;</span>
-    <img src="images/mood.png" alt="Mood Tracker Full" class="modal-img">
-    <h2>Mood Tracker App</h2>
-    <p>A mood journaling app that lets users track, view, and reflect on their emotions. Built with Android Studio using Java, with features like filters, a mood jar, maps, and QR code friend discovery.</p>
-    <a href="https://github.com/samridhikhosla/project-donotredeem" target="_blank" class="modal-btn">View GitHub</a>
-  </div>
-</div>
-
-
-
-<!-- AOS JS -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000, // animation duration in ms
-    once: true      // whether animation happens only once
-  });
-</script>
-
-<script>
-  gsap.registerPlugin(ScrollTrigger);
-
-  gsap.to(".disassemble-text span", {
-    scrollTrigger: {
-      trigger: ".disassemble-section",
-      start: "top center",
-      end: "bottom center",
-      scrub: true,
-    },
-    y: (i) => gsap.utils.random(-100, 100),
-    x: (i) => gsap.utils.random(-100, 100),
-    rotation: () => gsap.utils.random(-180, 180),
-    opacity: 0,
-    ease: "power3.out",
-    stagger: 0.05
-  });
-
   
-</script>
+  <div id="menu-bar">
+    <div id="apple-logo">
+      <img src="images/logo.png" height="20px"  >
+    </div>
 
-<script>
-  function openModal(id) {
-    document.getElementById(id).style.display = "flex";
-  }
+    <div class="web"><strong>Portfolio</strong></div>
+    <div class="finder">Finder</div>
+    <div class="file">File</div>
+    <div class="edit">Edit</div>
 
-  function closeModal(id) {
-    document.getElementById(id).style.display = "none";
-  }
-</script>
+    <div style="margin-left: auto;">
+      <span id="time">00:00</span>
+    </div>
+  </div>
+
+  <div class="desktop-grid ">
+
+    <div class="desktop-icon" onclick="openWindow('about')">
+      <img src="images/folder.png">
+      <p>about-me</p>
+    </div>
 
 
+  </div>
 
+
+  <div id="dock">
+
+    <div class="dock-icon" onclick="openWindow('finder')">
+      <img src="images/finder.png">
+    </div>
+
+    <div class="dock-icon" onclick="window.open('https://github.com/samridhikhosla')">
+      <img src="images/github.png">
+    </div>
+
+    <div class="dock-icon" onclick="window.open('https://www.linkedin.com/in/samridhi-khosla/')">
+      <img src="images/linkedin.png">
+    </div>
+
+    <div class="dock-icon" onclick="window.open('mailto:samridhikhosla@gmail.com')">
+      <img src="images/gmail.png">
+    </div>
+
+    <div class="dock-icon" onclick="window.open('https://samridhi.substack.com/')">
+      <img src="images/substack.png">
+    </div>
+
+  </div>
+
+  <!-- WINDOWS -->
+  <div id="about-window" class="window">
+    <div class="title-bar" onmousedown="startDrag(event, this.parentElement)">
+      <div class="window-controls">
+        <span class="close" onclick="closeWindow('about')"></span>
+        <span class="minimize"></span>
+        <span class="maximize"></span>
+      </div>
+      <div style="margin-left:10px">About Me</div>
+    </div>
+    <div style="padding:20px">
+      <h2>Hello! I am Samridhi Khosla</h2>
+      <p>lalala</p>
+    </div>
+  </div>
+
+  <script>
+    
+    function openWindow(id) {
+      document.getElementById(`${id}-window`).style.display = 'block';
+    }
+    function closeWindow(id) {
+      document.getElementById(`${id}-window`).style.display = 'none';
+    }
+
+    let activeWindow = null;
+    function startDrag(e, window) {
+      activeWindow = window;
+      offset = [e.clientX - window.offsetLeft, e.clientY - window.offsetTop];
+      document.onmousemove = dragWindow;
+    }
+
+    function dragWindow(e) {
+      activeWindow.style.left = (e.clientX - offset[0]) + 'px';
+      activeWindow.style.top = (e.clientY - offset[1]) + 'px';
+    }
+    document.onmouseup = () => { document.onmousemove = null; };
+
+    setInterval(() => {
+      document.getElementById('time').innerText = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    }, 1000);
+
+  </script>
 </body>
 </html>
