@@ -23,15 +23,41 @@
     </div>
   </div>
 
-  <div class="desktop-grid ">
+  <div id="desktop-area">
 
-    <div class="desktop-icon" onclick="openWindow('about')">
-      <img src="images/folder.png">
-      <p>about-me</p>
-    </div>
+      <div class="desktop-icon" onclick="openWindow('about')">
+        <img src="images/folder.png">
+        <p>introduction</p>
+      </div>
 
+      <div class="desktop-icon" onclick="openWindow('about')">
+        <img src="images/folder.png">
+        <p>projects</p>
+      </div>
+
+      <div class="desktop-icon" onclick="openWindow('about')">
+        <img src="images/folder.png">
+        <p>contact</p>
+      </div>
 
   </div>
+
+
+   <div id="new-area">
+
+      <div class="desktop-icon" onclick="openWindow('about')">
+        <img src="images/folder.png">
+        <p>about me</p>
+      </div>
+
+
+      <div class="desktop-icon" onclick="openWindow('resume')">
+        <img src="images/pdf.png">
+        <p>resume</p>
+      </div>
+
+  </div>
+
 
 
   <div id="dock">
@@ -73,7 +99,7 @@
       <div style="margin-left:10px">About Me</div>
     </div>
     <div style="padding:20px">
-      <p>─────────────❝𝐚𝐛𝐨𝐮𝐭 𝐦𝐞❞──────────────</p>
+      <p>───────────────────────❝𝐚𝐛𝐨𝐮𝐭 𝐦𝐞❞────────────────────────</p>
       <h2>Hello! I am Samridhi Khosla</h2>
     </div>
   </div>
@@ -94,6 +120,19 @@
       <p>✧༺✦✮✦༻∞∞༺✦✮✦༻✧✧༺✦✮✦༻∞✧༺✦✮✦༻∞✧༺✦✮✦༻</p>
     </div>
   </div>
+
+  <div id="resume-window" class="window">
+    <div class="title-bar" onmousedown="startDrag(event, this.parentElement)">
+      <div class="window-controls">
+        <span class="close" onclick="closeWindow('resume')"></span>
+        <span class="minimize"></span>
+        <span class="maximize"></span>
+      </div>
+      <div style="margin-left:10px">Resume (PDF)</div>
+    </div>
+    <embed src="images/resume.pdf" type="application/pdf" width="100%" height="100%">
+  </div>
+
 
   <script>
     
