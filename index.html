@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,12 +28,17 @@
 
       <div class="desktop-icon" onclick="openWindow('about')">
         <img src="images/folder.png">
-        <p>introduction</p>
+        <p>about me</p>
       </div>
 
       <div class="desktop-icon" onclick="openWindow('about')">
         <img src="images/folder.png">
         <p>projects</p>
+      </div>
+
+      <div class="desktop-icon" onclick="openWindow('about')">
+        <img src="images/folder.png">
+        <p>experience</p>
       </div>
 
       <div class="desktop-icon" onclick="openWindow('about')">
@@ -47,13 +53,18 @@
 
       <div class="desktop-icon" onclick="openWindow('about')">
         <img src="images/folder.png">
-        <p>about me</p>
+        <p>skills</p>
+      </div>
+
+      <div class="desktop-icon" onclick="openWindow('about')">
+        <img src="images/folder.png">
+        <p>learning</p>
       </div>
 
 
       <div class="desktop-icon" onclick="openWindow('resume')">
         <img src="images/pdf.png">
-        <p>resume</p>
+        <p>resume.pdf</p>
       </div>
 
   </div>
@@ -137,10 +148,13 @@
   <script>
     
     function openWindow(id) {
-      document.getElementById(`${id}-window`).style.display = 'block';
+    
+
+      document.getElementById(`${id}-window`).classList.add('active');
     }
+
     function closeWindow(id) {
-      document.getElementById(`${id}-window`).style.display = 'none';
+      document.getElementById(`${id}-window`).classList.remove('active');
     }
 
     let activeWindow = null;
