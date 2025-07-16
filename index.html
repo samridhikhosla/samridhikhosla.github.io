@@ -3,154 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <title>Personal Potfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init();</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
 </head>
 <body>
-    <div id = "header">
-        <div class="container">
-            <nav>
-                <div class="something">SK</div>
+   
+<section id="spotify-home">
+  <div class="spotify-container">
+    <h1 class="main-title" data-aos="fade-up">Samridhi Khosla</h1>
+<p class="subtitle" data-aos="fade-up" data-aos-delay="200">Building, learning, and vibing through code 🎧</p>
+<div class="button-row" data-aos="zoom-in" data-aos-delay="400">
 
-                <ul>
-                  <li><a href="#header">Home</a></li>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#learnings">Learnings</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
-              </nav>
-              <div class="header-text">
-                <div class="welcome">
-                    <img src="images/lavender.png" class="flower-left" alt="flower" width="200" height="300" />
-                    <h1>WELCOME!</h1>
-                    <img src="images/lavender.png" class="flower-right" alt="flower" width="200" height="300"/>
-                </div> 
-                <p>Hi there, this is my portfolio website.<br>
-                    <span>A little space where I share what I'm learning and building.</span>
-                </p>
-              </div>
-        </div>
+    <div class="button-row">
+      <a href="#about" class="btn">About Me</a>
+      <a href="#learnings" class="btn">Learnings</a>
+      <a href="#contact" class="btn">Contact</a>
     </div>
+  </div>
+</section>
 
-<!-- about section -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
+<section class="disassemble-section">
+  <h2 class="disassemble-text">
+    <span>B</span><span>u</span><span>i</span><span>l</span><span>d</span><span>i</span><span>n</span><span>g</span><span>,</span>
+    <span>&nbsp;</span>
+    <span>l</span><span>e</span><span>a</span><span>r</span><span>n</span><span>i</span><span>n</span><span>g</span><span>,</span>
+    <span>&nbsp;</span>
+    <span>a</span><span>n</span><span>d</span><span>&nbsp;</span>
+    <span>v</span><span>i</span><span>b</span><span>i</span><span>n</span><span>g</span>
+    <span>&nbsp;</span><span>t</span><span>h</span><span>r</span><span>o</span><span>u</span><span>g</span><span>h</span>
+    <span>&nbsp;</span><span>c</span><span>o</span><span>d</span><span>e</span><span>🎧</span>
+  </h2>
+</section>
 
-                <div class="about-col-1">
-                    <img src="images/me.png" width="445" height="655">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub">About Me</h1>
-                    <p class="sub-paragraph">I'm Samridhi Khosla, a third-year Computer Science student at the University of Alberta. 
-                       I enjoy bringing ideas to life, whether through apps, websites, or experimental 
-                       projects and I'm always eager to learn more. I'm currently seeking an internship where I can 
-                       apply my skills, grow through real-world experience, and contribute to building meaningful technology. 
-                       This website is a glimpse into my journey so far. Thanks for stopping by!
-                    </p>
+<section class="yo-section">
 
-                    <div class="tab-titles">
-                        <p class="tab active" onclick="opentab('skills')">Skills</p>
-                        <p class="tab" onclick="opentab('experience')">Experience</p>
-                        <p class="tab" onclick="opentab('education')">Education</p>
-                    </div>
 
-                    <div class="tab-content active" id="skills">
-                        <ul>
-                            <li>Python</li>
-                            <li>Java</li>
-                            <li>C</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>SQL</li>
-                            
-                        </ul>
-                    </div>
 
-                    <div class="tab-content" id="experience">
-                        <ul>
-                            <li><span><strong>Teaching Assistant - CMPUT 175</strong></span><br>
-                                <em>January 2025 - Present</em><br>
-                                <ul>
-                                    <li>CMPUT 175 - Introduction to the Foundations of Computation II</li>
-                                    <li>Assisted 20+ students within a lab setting with programming tasks, debugging, and reinforcing course concepts.</li>
-                                    <li>Guided students on key computing concepts, including object-oriented programming, functional programming, and Abstract Data Types.</li>
-                                    <li>Held open office hours, assisting any of the 600+ enrolled students with coding issues and algorithm concepts.</li>
-                                    <li>Graded lab assignments and provided feedback to help students improve code efficiency and readability.</li>
-                                </ul>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                    <div class="tab-content" id="education">
-                        <ul>
-                            <li>
-                                <span><strong>University of Alberta, Canada</strong></span><br>
-                                Bachelor of Science with Specialization in Computing Science<br>
-                                <em>September 2023 - April 2027 (expected)</em><br>
-                                GPA: 3.6 / 4.0
-                            </li>
-                            <li>
-                                <span><strong>Amity International School, India</strong></span><br>
-                                Science stream (Physics, Chemistry, Mathematics)<br>
-                                <em>April 2009 - April 2023</em><br>
-                                <ul>
-                                    <li>12th Grade: 92.8%</li>
-                                    <li>10th Grade: 96.4%</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+</section>
+<!-- Projects Section -->
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">My Projects</h2>
+    <div class="playlist-grid">
 
-                    <!-- <div class="resume">
-                        <p>Here is my resume :- [currently in progess]</p>
-                    </div> -->
-
-                </div>
-                
-            </div>
+      <!-- Project Card 1 -->
+      <div class="playlist-card" onclick="openModal('modal1')" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-img-container">
+          <img src="images/mood.png" alt="Mood Tracker">
+          <div class="play-button"><i class="fa fa-play"></i></div>
         </div>
-    </div>
+        <h3>Mood Tracker</h3>
+        <p>Genre: Wellness Tech</p>
+      </div>
 
-<!-- learnings section -->
-    <div id="learnings">
-        <div class="container">
-            <h1 class="contact-header">Learnings</h1>
-            <p class="con-paragraph">[In progress...]</p>
-        </div>
-    </div>
+      <!-- Add more cards similarly -->
 
-<!-- contact section -->
-    <div id="contact">
-        <div class="con_container">
-            <h1 class="contact-header">Contact me</h1>
-            <p class="con-paragraph">I'd love to hear from you! Whether you have a question, a collaboration idea, or just want to say hi! Feel free to reach out to me.</p>
-            <ul>
-                <li><strong>Email:</strong> <a href="mailto:samridhikhosla@gmail.com">samridhikhosla@gmail.com</a></li>
-                <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/samridhi-khosla">linkedin.com/in/samridhi-khosla</a></li>
-                <li><strong>GitHub:</strong> <a href="https://github.com/samridhikhosla">github.com/samridhikhosla</a></li>
-            </ul>
-        </div>
     </div>
+  </div>
+</section>
+
+<!-- Modal Structure -->
+<div id="modal1" class="project-modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <img src="images/mood.png" alt="Mood Tracker Full" class="modal-img">
+    <h2>Mood Tracker App</h2>
+    <p>A mood journaling app that lets users track, view, and reflect on their emotions. Built with Android Studio using Java, with features like filters, a mood jar, maps, and QR code friend discovery.</p>
+    <a href="https://github.com/samridhikhosla/project-donotredeem" target="_blank" class="modal-btn">View GitHub</a>
+  </div>
+</div>
+
+
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation duration in ms
+    once: true      // whether animation happens only once
+  });
+</script>
 
 <script>
-    var tabs = document.getElementsByClassName("tab")
-    var tabcontents = document.getElementsByClassName("tab-content")
+  gsap.registerPlugin(ScrollTrigger);
 
-    function opentab(tabname){
+  gsap.to(".disassemble-text span", {
+    scrollTrigger: {
+      trigger: ".disassemble-section",
+      start: "top center",
+      end: "bottom center",
+      scrub: true,
+    },
+    y: (i) => gsap.utils.random(-100, 100),
+    x: (i) => gsap.utils.random(-100, 100),
+    rotation: () => gsap.utils.random(-180, 180),
+    opacity: 0,
+    ease: "power3.out",
+    stagger: 0.05
+  });
 
-        for(tab of tabs){
-            tab.classList.remove("active");
-        }
-
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active");
-        }
-
-        document.getElementById(tabname).classList.add("active");
-        event.currentTarget.classList.add("active");
-    }
+  
 </script>
+
+<script>
+  function openModal(id) {
+    document.getElementById(id).style.display = "flex";
+  }
+
+  function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+  }
+</script>
+
+
+
 </body>
 </html>
