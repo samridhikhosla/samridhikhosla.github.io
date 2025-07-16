@@ -7,7 +7,7 @@
   
   <div id="menu-bar">
     <div id="apple-logo">
-      <img src="images/logo.png" height="20px"  >
+      <img src="images/logo.png" height="20px">
     </div>
 
     <div class="web"><strong>Portfolio</strong></div>
@@ -15,8 +15,11 @@
     <div class="file">File</div>
     <div class="edit">Edit</div>
 
-    <div style="margin-left: auto;">
-      <span id="time">00:00</span>
+    <div class="corner-things">
+      <img src="images/battery.png" height="20px">
+      <img src="images/wifi.png" height="20px">
+      <strong id="date">Sun 01 Jan</strong>
+      <strong id="time">00:00</strong>
     </div>
   </div>
 
@@ -70,8 +73,8 @@
       <div style="margin-left:10px">About Me</div>
     </div>
     <div style="padding:20px">
+      <p>─────────────❝𝐚𝐛𝐨𝐮𝐭 𝐦𝐞❞──────────────</p>
       <h2>Hello! I am Samridhi Khosla</h2>
-      <p>───── ❝ 𝐚𝐛𝐨𝐮𝐭 𝐦𝐞 ❞ ─────</p>
     </div>
   </div>
 
@@ -115,7 +118,11 @@
     document.onmouseup = () => { document.onmousemove = null; };
 
     setInterval(() => {
+      const now = new Date();
       document.getElementById('time').innerText = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+      const options = { weekday: 'short', day: '2-digit', month: 'short' };
+      document.getElementById('date').innerText = now.toLocaleDateString('en-GB', options).replace(',', '');
     }, 1000);
 
   </script>
