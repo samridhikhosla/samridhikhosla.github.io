@@ -128,6 +128,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 
+
   width: 900px;
   height: 600px;
   text-align: center;
@@ -153,6 +154,7 @@ body {
   padding: 0 10px;
   cursor: move;
 }
+
 .window-controls span {
   width: 12px;
   height: 12px;
@@ -169,7 +171,7 @@ body {
 
 .notes {
   background-color: rgba(116, 151, 255, 0.3);
-  height: 280px;
+  height: auto;
   width: 350px;
   margin: 20px auto 0 auto;
   border-radius: 20px;
@@ -179,9 +181,9 @@ body {
   padding: 15px 20px;
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
   color: #f1f1f1;
-  font-family: 'Segoe UI', sans-serif;
   font-size: 14px;
-  overflow-y: auto;
+  overflow: hidden;
+
 }
 
 .notes:hover {
@@ -214,4 +216,3 @@ body {
 .notes a:hover {
   text-decoration: underline;
 }
-

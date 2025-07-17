@@ -33,9 +33,9 @@
         <p>projects</p>
       </div>
 
-      <div class="desktop-icon" onclick="openWindow('experience')">
+      <div class="desktop-icon" onclick="openWindow('achievements')">
         <img src="images/folder.png">
-        <p>experience</p>
+        <p>achievements</p>
       </div>
 
       <div class="desktop-icon" onclick="openWindow('contact')">
@@ -104,11 +104,11 @@
        <br>
       Click any folder to explore: <br><br>
        ❤︎ <strong>about-me</strong> → who I am <br>
-       ❤︎ <strong>experience</strong> → where I've worked <br>
+       ❤︎ <strong>achievements</strong> → what I am upto <br>
        ❤︎ <strong>projects</strong> → stuff I've built <br>
        ❤︎ <strong>skills</strong> → what I know <br> 
        ❤︎ <strong>resume</strong> → <a href="images/resume.pdf" download="Samridhi_khosla_Resume.pdf" target="_blank">download here</a> <br>
-       ❤︎ <strong>Contact</strong> → info is pinned in the dock! <br><br>
+       ❤︎ <strong>contact</strong> → pinned in the dock <br><br>
       <em>P.S. Always exploring something new </em> <br><br>
       ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧
       
@@ -116,8 +116,8 @@
   </div>
 
 
-
   <!-- WINDOWS -->
+
   <div id="about-window" class="window">
     <div class="title-bar" onmousedown="startDrag(event, this.parentElement)">
       <div class="window-controls">
@@ -125,9 +125,93 @@
       </div>
       <div style="margin-left:10px">About Me</div>
     </div>
-    <div style="padding:20px">
+    <div style="padding:15px">
       <p>───────────────────────❝𝐚𝐛𝐨𝐮𝐭 𝐦𝐞❞────────────────────────</p>
-      <h2>Hello! I am Samridhi Khosla</h2>
+        <h2>Hello, I'm Samridhi Khosla! </h2>
+
+          <img src="images/me.png" alt="Samridhi Khosla"
+          style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); border: 2px solid #000">
+
+          <p style="margin-top: 30px;">
+            I am a third year Computing Science (Specialization) student at University of Alberta.  
+            I'm passionate about software development and exploring AI and machine learning.
+          </p>
+
+          <p style="margin-top: 40px; line-height: 1.6;">
+            I'm someone who finds joy in creating things that feel thoughtful, cozy, and a little bit magical.  
+            I love combining tech with creativity whether it's building websites, designing projects,  
+            or just making little digital corners that bring people together.
+          </p>
+
+          <p style="margin-top: 10px;">
+            𖦹 Likes: coffee, rainy days, cute side projects, and playlists for every mood 𖦹
+          <br>
+            ✿ Currently: coding, designing, organizing, dreaming ✿
+          </p>
+
+          <p>─────────────────────────────────────────────────────</p>
+
+    </div>
+  </div>
+
+  <div id="skills-window" class="window">
+    <div class="title-bar" onmousedown="startDrag(event, this.parentElement)">
+      <div class="window-controls">
+        <span class="close" onclick="closeWindow('skills')"></span>
+      </div>
+      <div style="margin-left:10px">Skills</div>
+    </div>
+    <div style="padding:20px">
+      <p>skills</p>
+    </div>
+  </div>
+
+  <div id="projects-window" class="window">
+    <div class="title-bar" onmousedown="startDrag(event, this.parentElement)">
+      <div class="window-controls">
+        <span class="close" onclick="closeWindow('projects')"></span>
+      </div>
+      <div style="margin-left:10px">Projects</div>
+    </div>
+    <div style="padding:20px">
+      <p>projects</p>
+    </div>
+  </div>
+
+  <div id="learning-window" class="window">
+    <div class="title-bar" onmousedown="startDrag(event, this.parentElement)">
+      <div class="window-controls">
+        <span class="close" onclick="closeWindow('learning')"></span>
+      </div>
+      <div style="margin-left:10px">Learning</div>
+    </div>
+    <div style="padding:20px">
+      <p>learning</p>
+    </div>
+  </div>
+
+  <div id="achievements-window" class="window">
+    <div class="title-bar" onmousedown="startDrag(event, this.parentElement)">
+      <div class="window-controls">
+        <span class="close" onclick="closeWindow('achievements')"></span>
+      </div>
+      <div style="margin-left:10px">Achievements</div>
+    </div>
+    <div style="padding:20px">
+      <p>achievements</p>
+    </div>
+  </div>
+
+  <div id="contact-window" class="window">
+    <div class="title-bar" onmousedown="startDrag(event, this.parentElement)">
+      <div class="window-controls">
+        <span class="close" onclick="closeWindow('contact')"></span>
+      </div>
+      <div style="margin-left:10px">Contact</div>
+    </div>
+    <div style="padding:20px">
+      <p>contact</p>
     </div>
   </div>
 
