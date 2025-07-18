@@ -272,7 +272,7 @@
 
         <ul style="text-align: left; list-style: none; padding-left: 0;">
           <li>
-            <strong>1st Prize at hackED 2025 (divE category)</strong><br>
+            <strong>1st Prize at hackED 2025 Hackathon (divE category)</strong><br>
             Creativity ✧ Teamwork ✧ Tech Skills  
             <br>
             <div style="display: flex; gap: 10px; margin-top: 10px;">
@@ -313,8 +313,8 @@
         <h3 style="margin-top: 15px;">Bonus Tier</h3>
         
           <p>Mentorship Program - St. Joseph's College</p>
-          <p>Volunteering - Upper Bound AI Conference</p>
-          <p>Machine Learning Kickstart Program @ AMII</p>
+          <p>Volunteered - Upper Bound AI Conference</p>
+          <p>Machine Learning Kickstart Program participant @ AMII</p>
           <p>Student Innovation Workshop - Pitch Presenter @ Edmonton Unlimited</p>
         
 
@@ -447,12 +447,28 @@
 
 
   <script>
-    
-    function openWindow(id) {
-    
+    let zIndexCounter = 100;
 
-      document.getElementById(`${id}-window`).classList.add('active');
+    function openWindow(id) {
+      const win = document.getElementById(`${id}-window`); 
+      win.classList.add('active');
+
+      zIndexCounter++;
+      win.style.zIndex = zIndexCounter;
+      win.style.transform = 'translate(-50%, -50%)';
     }
+
+    document.querySelectorAll('.window').forEach(win => {
+      win.addEventListener('mousedown', () => {
+        bringToFront(win);
+      });
+    });
+
+    function bringToFront(win) {
+      zIndexCounter++;
+      win.style.zIndex = zIndexCounter;
+    }
+    
 
     function closeWindow(id) {
       document.getElementById(`${id}-window`).classList.remove('active');

@@ -114,6 +114,7 @@ body {
   height: 48px;
   border-radius: 10px;
   object-fit: contain;
+  cursor: pointer;
 }
 
 .dock-icon:hover {
@@ -130,6 +131,7 @@ body {
 
 
   width: 900px;
+  z-index: 1;
   height: 600px;
   text-align: center;
   background: rgba(245,245,245,0.9);
