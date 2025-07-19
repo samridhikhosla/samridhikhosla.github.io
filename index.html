@@ -211,8 +211,44 @@
       </div>
       <div style="margin-left:10px">Projects</div>
     </div>
-    <div style="padding:20px">
-      <p>projects</p>
+    <div style="padding:15px">
+      <p>────────────────────────❝𝐩𝐫𝐨𝐣𝐞𝐜𝐭𝐬❞────────────────────────</p>
+      <div class="projects-grid">
+
+        <div class="project-card" onclick="window.location.href='https://github.com/samridhikhosla/samridhikhosla.github.io';">
+          <h3>Portfolio Website</h3>
+          <p>This very website! Designed and built from scratch to showcase my work and interests using custom HTML, CSS, and JavaScript.</p>
+        </div>
+
+        <div class="project-card" onclick="window.location.href='https://github.com/samridhikhosla/Git-Committers';">
+          <h3>Head Movement Navigation</h3>
+          <p>A Chrome extension built with JS and HTML that lets users navigate web pages using head movements, enabling a hands-free browsing experience.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Focus Frappe</h3>
+          <p>(In Progress) A productivity web app with goal visualization, scheduling tools, a Pomodoro timer, and mood-based Spotify playlists. Built using React & Django.</p>
+        </div>
+
+        <div class="project-card" onclick="window.location.href='https://github.com/samridhikhosla/project-donotredeem';">
+          <h3>Feelin'</h3>
+          <p>A mood-tracking Android app built with Java and Firebase. Lets users journal emotions, set privacy levels, and view moods on an interactive map. Developed as a team course project.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Project Title 5</h3>
+          <p>I'll update</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Project Title 6</h3>
+          <p>I'll update</p>
+        </div>
+    </div>
+
+        
+      </div>
+      <p>─────────────────────────────────────────────────────</p>
     </div>
   </div>
 
@@ -276,15 +312,15 @@
             Creativity ✧ Teamwork ✧ Tech Skills  
             <br>
             <div style="display: flex; gap: 10px; margin-top: 10px;">
-              <img src="images/win.jpg" alt="Hackathon Win" style="width: 48%; border-radius: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-              <img src="images/hacked.jpg" alt="Hackathon Win" style="width: 48%; border-radius: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+              <img src="images/win.jpg" alt="Hackathon Win" class="achievement-img" style="width: 48%; border-radius: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+              <img src="images/hacked.jpg" alt="Hackathon Win" class="achievement-img" style="width: 48%; border-radius: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
             </div>
           </li>
           <li style="margin-top: 12px;">
             <strong>Dean's Honour Roll</strong> (Years 1 & 2)<br>
             GPA 3.5+ → Consistent Academic Excellence
             <br>
-            <img src="images/roll.png" alt="roll" style="width: 100%; border-radius: 30px; margin: 10px 0; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+            <img src="images/roll.png" alt="roll" class="achievement-img" style="width: 100%; border-radius: 30px; margin: 10px 0; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
           </li>
           <li style="margin-top: 12px;">
             <strong>Academic Cohort Leader - CS</strong><br>
@@ -494,6 +530,8 @@
       const options = { weekday: 'short', day: '2-digit', month: 'short' };
       document.getElementById('date').innerText = now.toLocaleDateString('en-GB', options).replace(',', '');
     }, 1000);
+
+    openWindow('about');
 
   </script>
 </body>
